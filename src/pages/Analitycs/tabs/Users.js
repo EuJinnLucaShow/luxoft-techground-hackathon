@@ -8,11 +8,10 @@ export const Users = () => {
 
   return <Grid container>
     <Grid item display='flex' gap={2}>
-      <InfoItem title={'Усього користувачів'} icon={<PersonOutlineOutlinedIcon sx={{ fontSize: 30 }} />} count={190}/>
+      <InfoItem title={'Усього користувачів'} icon={<PersonOutlineOutlinedIcon sx={{ fontSize: 30 }} />} count={193}/>
       <InfoItem title={'Ветерани'} icon={<PersonOutlineOutlinedIcon sx={{ fontSize: 30 }}/>} count={103}/>
       <InfoItem title={'Члени родини'} icon={<PersonOutlineOutlinedIcon sx={{ fontSize: 30 }}/>} count={90}/>
     </Grid>
-
   </Grid>
 
 
