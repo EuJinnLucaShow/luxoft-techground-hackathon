@@ -38,11 +38,11 @@ export const MailingPlan = () => {
       <Table sx={{ minWidth: 650 }}>
         <TableHead>
           <TableRow>
-            <TableCell align='center' width='300px'>Шаблон</TableCell>
-            <TableCell align='center'>Текст</TableCell>
-            <TableCell align='center' >Група</TableCell>
-            <TableCell align='center' >Мессенджер</TableCell>
-            <TableCell align='center' width='50px'></TableCell>
+            <TableCell align='center' width='300px' sx={{ fontWeight: 'bold', fontSize: 16}} >Шаблон</TableCell>
+            <TableCell align='center' sx={{ fontWeight: 'bold', fontSize: 16}} >Текст</TableCell>
+            <TableCell align='center' sx={{ fontWeight: 'bold', fontSize: 16}} >Група</TableCell>
+            <TableCell align='center' sx={{ fontWeight: 'bold', fontSize: 16}} >Мессенджер</TableCell>
+            <TableCell align='center' sx={{ fontWeight: 'bold', fontSize: 16}} width='50px'></TableCell>
           </TableRow>
         </TableHead>
         <TableBody>

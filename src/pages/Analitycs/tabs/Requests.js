@@ -11,7 +11,7 @@ export const Requests = () => {
       <InfoItem title={"Всього звернень"} icon={<GroupOutlinedIcon sx={{ fontSize: 30 }} />} count={45}/>
       <InfoItem title={"Макс. звернень"} icon={<GroupOutlinedIcon sx={{ fontSize: 30 }}/>} count={9}/>
       <InfoItem title={'FQA'} icon={<GroupOutlinedIcon sx={{ fontSize: 30 }}/>} count={7}/>
-      <InfoItem title={'Лідуюча група'} icon={<GroupOutlinedIcon sx={{ fontSize: 30 }} />} count={3}/>
+      <InfoItem title={'Лідуюча група:'} subtitle={'Стосунки'} icon={<GroupOutlinedIcon sx={{ fontSize: 30 }} />} count={3}/>
       <InfoItem title={'Середній вік'} icon={<GroupOutlinedIcon sx={{ fontSize: 30 }}/>} count={35}/>
     </Grid>
 

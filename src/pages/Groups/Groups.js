@@ -76,10 +76,10 @@ export const Groups = () => {
     <Table sx={{ minWidth: 650 }}>
       <TableHead>
         <TableRow>
-          <TableCell align='center' width='300px'>Назва</TableCell>
-          <TableCell align='center'>Кількість учасників</TableCell>
-          <TableCell align='center' width='50px'>Редагувати</TableCell>
-          <TableCell align='center' width='50px'>Видалити</TableCell>
+          <TableCell align='center' sx={{ fontWeight: 'bold', fontSize: 16}}  width='300px'>Назва</TableCell>
+          <TableCell align='center' sx={{ fontWeight: 'bold', fontSize: 16}} >Кількість учасників</TableCell>
+          <TableCell align='center'sx={{ fontWeight: 'bold', fontSize: 16}}  width='50px'>Редагувати</TableCell>
+          <TableCell align='center'sx={{ fontWeight: 'bold', fontSize: 16}}  width='50px'>Видалити</TableCell>
         </TableRow>
       </TableHead>
       <TableBody>

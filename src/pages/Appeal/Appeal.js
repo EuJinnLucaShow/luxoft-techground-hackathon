@@ -21,11 +21,11 @@ export const Appeal = () => {
     <Table sx={{ minWidth: 650 }}>
       <TableHead>
         <TableRow>
-          <TableCell align='center'>Дата звернення</TableCell>
-          <TableCell align='center'>Звернення</TableCell>
-          <TableCell align='center'>Група</TableCell>
-          <TableCell align='center'>Учасник</TableCell>
-          <TableCell align='center'></TableCell>
+          <TableCell align='center' sx={{ fontWeight: 'bold', fontSize: 16}} >Дата звернення</TableCell>
+          <TableCell align='center' sx={{ fontWeight: 'bold', fontSize: 16}} >Звернення</TableCell>
+          <TableCell align='center' sx={{ fontWeight: 'bold', fontSize: 16}} >Група</TableCell>
+          <TableCell align='center' sx={{ fontWeight: 'bold', fontSize: 16}} >Учасник</TableCell>
+          <TableCell align='center' sx={{ fontWeight: 'bold', fontSize: 16}} ></TableCell>
         </TableRow>
       </TableHead>
       <TableBody>
