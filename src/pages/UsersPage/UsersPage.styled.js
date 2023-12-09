@@ -5,7 +5,6 @@ background-color: #FFF;`
 
 export const HeaderBox = styled.div`
 display: flex;
-width: 1142px;
 padding: 20px;
 justify-content: space-between;
 align-items: center;
