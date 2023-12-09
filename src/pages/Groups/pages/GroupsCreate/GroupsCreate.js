@@ -68,7 +68,7 @@ export const GroupsCreate = () => {
     <Box margin={3}>
       <Typography variant='h6' fontWeight='bold' mb={2}>Додати учасника</Typography>
       <Box display='flex' gap={3}>
-        <TextField label="Телефон" type='number' variant="outlined" value={phoneNumber}  onChange={handleChangePhoneNumber} />
+        <TextField label="Телефон" variant="outlined" value={phoneNumber}  onChange={handleChangePhoneNumber} />
         <StyledButton onClick={handleAddedUser} variant='outlined' endIcon={<AddOutlinedIcon/>}>Додати ще</StyledButton>
       </Box>
     </Box>
