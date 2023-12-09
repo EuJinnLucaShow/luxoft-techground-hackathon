@@ -46,33 +46,40 @@ export default function TableUsers() {
           </TableRow>
         </TableHead>
         <TableBody>
-          {rows.map(row => (
-            <TableRow
-              key={row.id}
-              sx={{ '&:last-child td, &:last-child th': { border: 0 } }}
-            >
-              <TableCell align="center" component="th" scope="row">
-                {row.username}
-              </TableCell>
-              <TableCell align="center">{row.userGroup}</TableCell>
-              <TableCell align="center">{row.age}</TableCell>
-              <TableCell align="center">{row.userStatus}</TableCell>
-              <TableCell align="center">{row.location}</TableCell>
-              <TableCell align="center">{row.adminRequestsCount}</TableCell>
-              <TableCell align="center">{row.familyMembers.length}</TableCell>
-              <TableCell align="center">
-                <img src={messenger} alt="messenger" />
-              </TableCell>
-              <TableCell align="center">
-                <img
-                  onClick={() => alert()}
-                  src={edit}
-                  alt="edit"
-                  style={{ cursor: 'pointer' }}
-                />
-              </TableCell>
-            </TableRow>
-          ))}
+          {rows.map(row => {
+            const birthDate = row.birthday ? new Date(row.birthday) : null;
+            const age = birthDate
+              ? Math.floor((new Date() - birthDate) / 31557600000)
+              : null;
+
+            return (
+              <TableRow
+                key={row.id}
+                sx={{ '&:last-child td, &:last-child th': { border: 0 } }}
+              >
+                <TableCell align="center" component="th" scope="row">
+                  {row.username}
+                </TableCell>
+                <TableCell align="center">{row.userGroup}</TableCell>
+                <TableCell align="center">{age || '-'}</TableCell>
+                <TableCell align="center">{row.userStatus}</TableCell>
+                <TableCell align="center">{row.location}</TableCell>
+                <TableCell align="center">{row.adminRequestsCount}</TableCell>
+                <TableCell align="center">{row.familyMembers.length}</TableCell>
+                <TableCell align="center">
+                  <img src={messenger} alt="messenger" />
+                </TableCell>
+                <TableCell align="center">
+                  <img
+                    onClick={() => alert()}
+                    src={edit}
+                    alt="edit"
+                    style={{ cursor: 'pointer' }}
+                  />
+                </TableCell>
+              </TableRow>
+            );
+          })}
         </TableBody>
       </Table>
     </TableContainer>
