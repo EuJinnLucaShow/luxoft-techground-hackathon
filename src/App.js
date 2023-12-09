@@ -10,6 +10,8 @@ import {Appeal} from "./pages/Appeal/Appeal";
 import {Groups} from "./pages/Groups/Groups";
 import {GroupsEdit} from "./pages/Groups/pages/GroupsEdit/GroupsEdit";
 import {GroupsCreate} from "./pages/Groups/pages/GroupsCreate/GroupsCreate";
+import {Analitycs} from "./pages/Analitycs/Analitycs";
+import {Mailing} from "./pages/Mailing/Mailing";
 import { UsersPage } from './pages/UsersPage/UsersPage';
 
 function App() {
@@ -39,11 +41,11 @@ function App() {
             />
             <Route
               path='/analytics'
-              element={<div>Analytics</div>}
+              element={<Analitycs/>}
             />
             <Route
               path='/mailing'
-              element={<div>Mailing</div>}
+              element={<Mailing/>}
             />
             <Route
               path='*'
