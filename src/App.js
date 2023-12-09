@@ -10,6 +10,7 @@ import {Appeal} from "./pages/Appeal/Appeal";
 import {Groups} from "./pages/Groups/Groups";
 import {GroupsEdit} from "./pages/Groups/pages/GroupsEdit/GroupsEdit";
 import {GroupsCreate} from "./pages/Groups/pages/GroupsCreate/GroupsCreate";
+import { UsersPage } from './pages/UsersPage/UsersPage';
 
 function App() {
   return (
@@ -19,7 +20,7 @@ function App() {
         <SideBar />
         <div className='container'>
           <Routes>
-            <Route path='/users' element={<div>Users</div>} />
+            <Route path='/users' element={<UsersPage/>} />
             <Route
               path='/groups'
               element={<Groups/>}
