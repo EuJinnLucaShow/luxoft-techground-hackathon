@@ -25,7 +25,7 @@ export const Appeal = () => {
           <TableCell align='center'>Звернення</TableCell>
           <TableCell align='center'>Група</TableCell>
           <TableCell align='center'>Учасник</TableCell>
-          <TableCell align='center'>Відповісти</TableCell>
+          <TableCell align='center'></TableCell>
         </TableRow>
       </TableHead>
       <TableBody>
