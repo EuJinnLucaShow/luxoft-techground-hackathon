@@ -39,7 +39,7 @@ export const Mailing = () => {
   };
 
 
-  return <PageWrapper title={'Аналітика'} loading={false}>
+  return <PageWrapper title={'Розсилка'} loading={false}>
     <Box sx={{ borderBottom: 1, borderColor: 'divider' }}>
       <Tabs value={value} onChange={handleChange} >
         <Tab sx={{ width: '50%' , fontWeight: 'bold', fontSize: '18px'}} label="Шаблон розсилки"  />

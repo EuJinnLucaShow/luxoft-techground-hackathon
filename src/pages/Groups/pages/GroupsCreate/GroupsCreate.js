@@ -113,7 +113,7 @@ export const GroupsCreate = () => {
     </Box>}
 
   <Box m={4}>
-    <StyledButton onClick={handleAddedGroup} variant='outlined' sx={{ backgroundColor: '#000', color: '#fff'}}>Зберегти зміни</StyledButton>
+    <StyledButton onClick={handleAddedGroup} variant='outlined' sx={{ backgroundColor: '#000', color: '#fff'}}>Cтворити групу</StyledButton>
   </Box>
   </PageWrapper>
 }
