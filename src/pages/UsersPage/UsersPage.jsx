@@ -4,6 +4,7 @@ import FileDownloadOutlinedIcon from '@mui/icons-material/FileDownloadOutlined';
 import { HeaderBox, SortBtn, SortWrapp, SpanBtn, Title, WrappBtn, Wrapper } from './UsersPage.styled'
 import styled from '@emotion/styled';
 import { Button } from '@mui/material';
+import TableUsers from '../../common/components/TableUsers/TableUsers';
 
 const StyledButton = styled(Button) ({
   borderRadius: '40px',
@@ -15,7 +16,6 @@ const StyledButton = styled(Button) ({
 })
 
 export const UsersPage = () => {
-
     
     return (
         <Wrapper>
@@ -39,7 +39,10 @@ export const UsersPage = () => {
                 <SortBtn><SpanBtn>За областю</SpanBtn><svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 17 17" fill="none">
 <path d="M4.2 1L1 4.2M4.2 1L7.4 4.2M4.2 1L4.2 16.4667M10.0667 4.2L16.4667 4.2M10.0667 8.46667H14.3333M10.0667 12.7333L12.2 12.7333" stroke="black" stroke-width="1.5" stroke-linejoin="round"/>
 </svg></SortBtn>
-            </SortWrapp>
+        </SortWrapp>
+        <>
+          <TableUsers/>
+        </>
    </Wrapper>
     )
 }
