@@ -15,7 +15,7 @@ const StyledSideBar = styled(Box) ({
   position: 'absolute',
   height: '100vh',
   backgroundColor: '#FFFFFF',
-  margin: 0
+  margin: '10px 0 0 0',
 });
 
 
@@ -48,10 +48,17 @@ const sidebarItems = [
 ];
 
 const StyledNavLink = styled(NavLink)({
-
   '&.active': {
-  	backgroundColor: '#2F6CA2',
-  	color: '#FFFFFF'
+  	backgroundColor: '#1F4064',
+  	color: '#FFFFFF',
+
+    '&:hover': {
+      backgroundColor: '#2F6CA2'
+    },
+
+    'svg': {
+      fill: '#FFFFFF',
+    }
   },
 });
 
@@ -60,8 +67,8 @@ export  const SideBar = () =>  {
   return (<StyledSideBar>
       {sidebarItems.map((item) => 		(
         <ListItemButton key={item.link} component={StyledNavLink} to={item.link} >
-          <ListItemIcon children={item.icon} sx={{ color: '#000'}}/>
-          <ListItemText primary={item.name}  sx={{ color: '#000' }}/>
+          <ListItemIcon children={item.icon} color='inherit'/>
+          <ListItemText primary={item.name} color='inherit' />
         </ListItemButton>) )}
     </StyledSideBar>
   );
